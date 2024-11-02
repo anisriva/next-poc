@@ -1,8 +1,9 @@
-import { Link } from "@nextui-org/react";
+import { Link} from "@nextui-org/react";
+
 
 export default function Footer() {
   return (
-    <footer className="py-4 text-center bg-primary-50">
+    <footer className="py-10 text-center bg-background">
       <p className="text-sm">
         &copy; 2024 Acme. All rights reserved
       </p>

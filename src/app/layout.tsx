@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" className="dark text-foreground bg-background">
       <head>{/* Any additional head content or SEO */}</head>
       <body className={`antialiased`}>
         <Providers>
