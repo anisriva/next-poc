@@ -1,4 +1,4 @@
-`use client`;
+"use client";
 
 import {
   Navbar,
@@ -6,40 +6,49 @@ import {
   NavbarContent,
   NavbarItem,
   Link,
-  DropdownItem,
-  DropdownTrigger,
-  Dropdown,
-  DropdownMenu,
-  Avatar,
 } from "@nextui-org/react";
+
+import { usePathname } from "next/navigation";
 
 import { AcmeLogo } from "./Logo";
 import SearchBar from "./Searchbar";
 
+import { cpitalizeFirstLetter } from "../../utils/stringUtils";
+
 export default function Header() {
+  const pathname = usePathname();
+
+  const navBarItems: Record<string, string> = {
+    home: "/",
+    news: "/news",
+    dashboard: "/dashboard",
+  };
+
   return (
     <Navbar isBordered>
       <NavbarContent justify="start">
         <NavbarBrand className="mr-4">
-          <AcmeLogo />
-          <p className="hidden sm:block font-bold text-inherit">Acme</p>
+          <Link color="foreground" href={navBarItems.home}>
+            <AcmeLogo />
+            <p className="hidden sm:block font-bold text-inherit">Acme</p>
+          </Link>
         </NavbarBrand>
         <NavbarContent className="hidden sm:flex gap-3">
-          <NavbarItem>
-            <Link color="foreground" href="#">
-              Features
-            </Link>
-          </NavbarItem>
-          <NavbarItem isActive>
-            <Link href="#" aria-current="page" color="secondary">
-              Customers
-            </Link>
-          </NavbarItem>
-          <NavbarItem>
-            <Link color="foreground" href="#">
-              Integrations
-            </Link>
-          </NavbarItem>
+          {Object.keys(navBarItems)
+            .filter((page) => page !== "home")
+            .map((page) => {
+              const isActive = navBarItems[page] === pathname;
+              return (
+                <NavbarItem key={page} isActive={isActive}>
+                  <Link
+                    color={isActive ? "secondary" : "foreground"}
+                    href={navBarItems[page]}
+                  >
+                    {cpitalizeFirstLetter(page)}
+                  </Link>
+                </NavbarItem>
+              );
+            })}
         </NavbarContent>
       </NavbarContent>
 

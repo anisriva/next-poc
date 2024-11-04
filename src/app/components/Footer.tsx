@@ -8,10 +8,10 @@ export default function Footer() {
         &copy; 2024 Acme. All rights reserved
       </p>
       <div className="mt-2">
-        <Link href="/privacy" color="primary" className="mx-2">
+        <Link href="/" color="primary" className="mx-2">
           Privacy Policy
         </Link>
-        <Link href="/terms" color="primary" className="mx-2">
+        <Link href="/" color="primary" className="mx-2">
           Terms of Service
         </Link>
       </div>
