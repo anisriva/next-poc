@@ -21,7 +21,7 @@ export default function Header() {
   const navBarItems: Record<string, string> = {
     home: "/",
     news: "/news",
-    dashboard: "/dashboard",
+    tickets: "/tickets",
   };
 
   return (
