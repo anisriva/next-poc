@@ -1,9 +1,11 @@
-import { Providers } from "./providers";
-import type { Metadata } from "next";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
 import "./globals.css";
 import { Roboto} from "next/font/google";
+import type { Metadata } from "next";
+
+import { Providers } from "./providers";
+
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   title: "Nextjs POC",
@@ -23,7 +25,7 @@ export default function RootLayout({
       <body className={`antialiased ${font.className}`}>
         <Providers>
           <Header />
-          <main className="p-2 min-h-screen">{children}</main>
+          <main className="p-2 min-h-screen mx-auto px-[20%]">{children}</main>
           <Footer />
         </Providers>
       </body>
