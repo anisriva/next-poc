@@ -1,20 +1,14 @@
-interface PageProps {
-  params: {
-    id: string;
-  };
-}
+import { getNewById } from "@/app/services/news";
+import { Card, CardBody, CardHeader } from "@nextui-org/react";
 
-const updates = {
-  "1" : "New product launch",
-  "2" : "Fireside talk by CEO",
-  "3" : "New office building opening"
-}
-
-export default function Page({ params }: PageProps) {
-  const { id } = params;
+export default function News({ id }: { id: String }) {
+  const news = getNewById(id);
   return (
-    <h1>
-        {updates[id]}
-    </h1>
+    <>
+      <Card>
+        <CardHeader>{news.title}</CardHeader>
+        <CardBody>{news.body}</CardBody>
+      </Card>
+    </>
   );
 }

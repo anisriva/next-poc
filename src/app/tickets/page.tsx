@@ -1,5 +1,9 @@
+import TicketList from "./Ticketlist";
 export default function Tickets() {
   return (
-    <div>Tickets</div>
-  )
+    <>
+      <div>Tickets</div>
+      <TicketList />
+    </>
+  );
 }

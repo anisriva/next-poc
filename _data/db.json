@@ -1,0 +1,77 @@
+{
+  "tickets": [
+    {
+      "id": "1",
+      "title": "Fix the footer links please",
+      "body": "Lorem ipsum Triforce sit amet, Linkus Hyruleus tempus Ganondorf. Nunc ocarina sagittis quis Majoras Mask. Nulla in metus arcu. Suspendisse potenti. In vel mauris varius, consectetur Zora ipsum eget, Master Sword porttitor urna. Fusce elementum urna elit, eget eleifend velit consectetur eget. Integer vel lobortis ipsum, vitae auctor Ocarina of Time. Donec sed urna dapibus, interdum magna a, eleifend magna. Curabitur tincidunt enim a neque volutpat. Phasellus auctor magna vel nunc pretium, ut volutpat justo tristique. Pellentesque cursus convallis mauris, in tempus enim tincidunt vitae.",
+      "priority": "low",
+      "user_email": "mario@netninja.dev"
+    },
+    {
+      "id": "2",
+      "title": "Add in a new stylesheet",
+      "body": "Lorem ipsum Triforce sit amet, Linkus Hyruleus tempus Ganondorf. Nunc ocarina sagittis quis Majoras Mask. Nulla in metus arcu. Suspendisse potenti. In vel mauris varius, consectetur Zora ipsum eget, Master Sword porttitor urna. Fusce elementum urna elit, eget eleifend velit consectetur eget. Integer vel lobortis ipsum, vitae auctor Ocarina of Time. Donec sed urna dapibus, interdum magna a, eleifend magna. Curabitur tincidunt enim a neque volutpat. Phasellus auctor magna vel nunc pretium, ut volutpat justo tristique. Pellentesque cursus convallis mauris, in tempus enim tincidunt vitae.",
+      "priority": "medium",
+      "user_email": "mario@netninja.dev"
+    },
+    {
+      "id": "3",
+      "title": "Fix the footer links",
+      "body": "Lorem ipsum Triforce sit amet, Linkus Hyruleus tempus Ganondorf. Nunc ocarina sagittis quis Majoras Mask. Nulla in metus arcu. Suspendisse potenti. In vel mauris varius, consectetur Zora ipsum eget, Master Sword porttitor urna. Fusce elementum urna elit, eget eleifend velit consectetur eget. Integer vel lobortis ipsum, vitae auctor Ocarina of Time. Donec sed urna dapibus, interdum magna a, eleifend magna. Curabitur tincidunt enim a neque volutpat. Phasellus auctor magna vel nunc pretium, ut volutpat justo tristique. Pellentesque cursus convallis mauris, in tempus enim tincidunt vitae.",
+      "priority": "high",
+      "user_email": "peach@netninja.dev"
+    }
+  ],
+  "news": [
+    {
+      "id": "1",
+      "title": "Global Markets Rebound After Recent Decline",
+      "body": "Stock markets around the world have shown signs of recovery after last week's significant losses. Experts suggest that investor confidence is slowly returning as key economic indicators improve."
+    },
+    {
+      "id": "2",
+      "title": "New Health Guidelines Issued Amid Rising Concerns",
+      "body": "The Health Ministry released updated guidelines today to address the surge in seasonal illnesses. Health officials advise citizens to follow the protocols closely to prevent further outbreaks."
+    },
+    {
+      "id": "3",
+      "title": "Major Tech Conference Kicks Off in San Francisco",
+      "body": "Industry leaders gathered in San Francisco today to discuss the latest trends and innovations in technology. Keynote speeches emphasized the growing role of AI in everyday life."
+    },
+    {
+      "id": "4",
+      "title": "Breakthrough in Renewable Energy Achieved",
+      "body": "Scientists announced a significant advancement in renewable energy storage, which could pave the way for more sustainable power sources worldwide. The discovery has received praise from environmental groups."
+    },
+    {
+      "id": "5",
+      "title": "Local Community Rallies for Education Funding",
+      "body": "Parents and educators joined together to call for increased funding for local schools. The rally, held at the city council, highlighted the challenges faced by underfunded educational programs."
+    },
+    {
+      "id": "6",
+      "title": "New Regulations Impact Small Businesses",
+      "body": "Small business owners expressed concerns over new regulations that they claim could negatively affect their operations. The legislation aims to increase transparency but may also increase operational costs."
+    },
+    {
+      "id": "7",
+      "title": "Breakthrough Medical Research Offers Hope",
+      "body": "Researchers have developed a promising new treatment for a rare disease, offering hope to thousands of patients. Clinical trials have shown positive results, though further testing is required."
+    },
+    {
+      "id": "8",
+      "title": "Sports Team Advances to Finals in Historic Match",
+      "body": "In a thrilling game, the local team secured its place in the finals for the first time in a decade. Fans are celebrating the team's achievement, with excitement building for the championship."
+    },
+    {
+      "id": "9",
+      "title": "New Art Exhibit Opens to Enthusiastic Crowds",
+      "body": "The city's latest art exhibit opened this weekend, featuring works from both local and international artists. The exhibit explores themes of identity and change, drawing large crowds."
+    },
+    {
+      "id": "10",
+      "title": "Research Shows Impact of Climate Change on Wildlife",
+      "body": "A new study highlights the effects of climate change on various species. Researchers warn that rising temperatures are pushing some animals to the brink of extinction."
+    }
+  ]
+}

@@ -1,11 +1,17 @@
-import { Button, Card, CardBody, CardHeader, Divider } from "@nextui-org/react";
+import {
+  Button,
+  Card,
+  CardBody,
+  CardFooter,
+  CardHeader,
+  Divider,
+  Chip,
+} from "@nextui-org/react";
 import Link from "next/link";
-export default function Home() {
-  const updates = [
-    {id : 1, msg : "New product launch"},
-    {id : 2, msg : "Fireside talk by CEO"},
-    {id : 3, msg : "New office building opening"},
-  ];
+import { getTickets } from "./services/tickets";
+
+export default async function Home() {
+  const tickets = await getTickets();
   return (
     <main>
       <h1>Welcome</h1>
@@ -19,21 +25,34 @@ export default function Home() {
         illo molestiae. Illo!
       </p>
       <hr />
-      <div key="view-ticket-button" className="flex  items-center justify-center">
+      <div
+        key="view-ticket-button"
+        className="flex  items-center justify-center"
+      >
         <Link href={"/tickets"}>
           <Button className="bg-secondary-500">View tickets</Button>
         </Link>
       </div>
-      <div key="view-news" className="flex items-center justify-center flex-col gap-10 rounded-md bg-zinc-800 p-10 mt-10">
-        {updates.map((update) => (
-          <Link href={`/news/${update.id}`}>
-            <Card key={update.id} className="w-[90%] bg-secondary-100 p-1">
-              <CardHeader>{update.msg}</CardHeader>
+      <div
+        key="view-news"
+        className="flex flex-col rounded-md bg-zinc-800 m-10 gap-10 p-10 justify-center items-center"
+      >
+        {tickets.map((ticket) => (
+          <Link key={ticket.id} href={`/news/${ticket.id}`}>
+            <Card
+              key={Number(ticket.id)}
+              className="w-[90%] bg-secondary-100 mx-auto "
+            >
+              <CardHeader className="text-lg font-extrabold justify-center">
+                {ticket.title}
+              </CardHeader>
               <Divider />
-              <CardBody>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Corporis quia quidem.
-              </CardBody>
+              <CardBody>{ticket.body}</CardBody>
+              <Divider />
+              <CardFooter className="flex justify-between">
+                <Chip variant="faded">{ticket.priority}</Chip>
+                <Chip variant="bordered">{ticket.user_email}</Chip>
+              </CardFooter>
             </Card>
           </Link>
         ))}
